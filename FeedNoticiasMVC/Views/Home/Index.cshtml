@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>
+                    Principais Notícias -
+                    @DateTime.Now.ToString("dd/MM/yyy HH:mm:ss")
+                </h1>
+            </hgroup>
+        </div>
+    </section>
+
+    @Html.Action("PartialViewNoticias")
+</div>
